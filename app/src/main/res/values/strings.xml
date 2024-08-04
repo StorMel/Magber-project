@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Magber</string>
+    <string name="clientSuggestETHint">enter a video link</string>   <!--https://stackoverflow.com/questions/2183962/how-to-read-value-from-string-xml-in-android-->
+    <string name="HostDescription">Leads to the host actions panel. must be android 10 and up to use.</string>
+    <string name="JoinDescription">Leads to the client actions panel.</string>
+    <string name="DisconnectDescription">disconnects all connections between the phones and stops all background activities. phone will be on unknown status</string>
+    <string name="AdvertiseDescription">phone will be on advertise status. advertises the phone as the host for other phones(clients) to connect to. before a connection is initiated a dialog will pop up for the user to accept/decline it. once connected, phone will be on connected status</string>
+    <string name="DiscoverDescription">phone will be on discover status. discovers host phones which pressed the advertise button option to form a connection between them, before a connection is initiated a dialog will pop up for the user to accept/decline it. once connected, phone will be on connected status</string>
+    <string name="SuggestListDescription">a list for the host showing suggested links sent by clients. once a link is pressed it will be removed from the list and the link will be opened</string>
+    <string name="SuggestDescription">clients can use this option in order to send the host links of music videos from youtube to be streamed from the host to the clients in sync</string>
+    <string name="InitDescription">initialize audio capture, a dialog will pop up asking for permission to audio record the phones internal audio. once the dialog is accepted the init button will be replaced with the start stream button</string>
+    <string name="StartStreamDescription">starts streaming the internal audio of the hosts phone to the connected clients, a service will start in the background for the streaming which will allow the user to open music applications without staying in the app . this also stops the phone from being advertised to other clients for new connections.</string>
+    <string name="StopStreamDescription">stops the audio stream to the connected clients, closes the phones audio capture and closes the stream service running in the background</string>
+</resources>

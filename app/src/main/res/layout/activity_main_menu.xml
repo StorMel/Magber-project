@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ui.MainMenu">
+
+    <!--Button
+        android:id="@+id/host"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:text="host"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32999998" /-->
+    <!--Button
+        android:id="@+id/join"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="nearbyconnection"
+        android:text="join"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.73" /-->
+    <ImageView
+        android:id="@+id/backgroundImg"
+        android:layout_width="match_parent"
+android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/abstractbluegeometricshapesbackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/HostBtnMaMe"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageButton
+        android:id="@+id/HostBtnMaMe"
+        android:layout_width="wrap_content"
+        android:layout_height="181dp"
+        android:adjustViewBounds="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:onClick="openHostActionsPanel"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/ClientBtnMaMe"
+        app:layout_constraintEnd_toEndOf="@+id/ClientBtnMaMe"
+        app:layout_constraintHorizontal_bias="0.5"
+
+        app:layout_constraintStart_toStartOf="@+id/ClientBtnMaMe"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/host" />
+
+    <ImageButton
+        android:id="@+id/ClientBtnMaMe"
+        android:layout_width="wrap_content"
+        android:layout_height="177dp"
+        android:adjustViewBounds="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:onClick="openClientActionsPanel"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/HostBtnMaMe"
+        app:srcCompat="@drawable/joinicon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

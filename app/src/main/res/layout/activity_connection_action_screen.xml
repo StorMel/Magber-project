@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ConnectionActionPanelScreen"
+    >
+
+
+    <!--Button
+        android:id="@+id/advertise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="advertise"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/stopadvertise"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" /-->
+
+    <!--Button
+        android:id="@+id/stopadvertise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stop advertise"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/advertise"
+        app:layout_constraintTop_toTopOf="parent" /-->
+
+    <!--ImageButton
+        android:id="@+id/stopadvertise"
+        android:layout_width="67dp"
+        android:layout_height="97dp"
+        android:adjustViewBounds="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/disconnect"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029"
+        app:srcCompat="@drawable/stopadverbtn" /-->
+
+    <!--Button
+        android:id="@+id/discover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="discover"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" /-->
+    <!--Button
+        android:id="@+id/stopdiscover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stop discover"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/discover"
+        app:layout_constraintTop_toTopOf="parent" /-->
+
+    <!--Button
+        android:id="@+id/startaudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start audio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/stop_audio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.63" /-->
+    <!--Button
+        android:id="@+id/stop_audio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stop audio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.63" /-->
+
+    <!--ImageButton
+        android:id="@+id/stopdiscover"
+        android:layout_width="66dp"
+        android:layout_height="96dp"
+        android:adjustViewBounds="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/disconnect"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029"
+        app:srcCompat="@drawable/stopdiscoverbtn" /-->
+
+    <ImageView
+        android:id="@+id/backgroundImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/abstractbluegeometricshapesbackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/HostBtnMaMe"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/discoverBtnCoAcSc"
+        android:layout_width="121dp"
+        android:layout_height="181dp"
+        android:adjustViewBounds="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/disconnectBtnCoAcSc"
+        app:layout_constraintVertical_bias="0.151"
+        app:srcCompat="@drawable/discoverbtn" />
+
+    <ImageButton
+        android:id="@+id/advertiseBtnCoAcSc"
+        android:layout_width="122dp"
+        android:layout_height="182dp"
+        android:adjustViewBounds="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/disconnectBtnCoAcSc"
+        app:layout_constraintVertical_bias="0.149"
+        app:srcCompat="@drawable/advertisebtn" />
+
+    <ImageButton
+        android:id="@+id/startaudioBtnCoAcSc"
+        android:layout_width="131dp"
+        android:layout_height="185dp"
+        android:adjustViewBounds="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/initBtnCoAcSc"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/stopaudioBtnCoAcSc"
+        app:layout_constraintTop_toBottomOf="@+id/advertiseBtnCoAcSc"
+        app:layout_constraintVertical_bias="0.309"
+        app:srcCompat="@drawable/startstream" />
+
+    <ImageButton
+        android:id="@+id/stopaudioBtnCoAcSc"
+        android:layout_width="131dp"
+        android:layout_height="185dp"
+        android:adjustViewBounds="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundImg"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/advertiseBtnCoAcSc"
+        app:layout_constraintVertical_bias="0.309"
+        app:srcCompat="@drawable/stopstreaming" />
+
+    <ImageButton
+        android:id="@+id/initBtnCoAcSc"
+        android:layout_width="133dp"
+        android:layout_height="183dp"
+        android:adjustViewBounds="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/advertiseBtnCoAcSc"
+        app:layout_constraintVertical_bias="0.306"
+        app:srcCompat="@drawable/initbtn" />
+
+    <TextView
+        android:id="@+id/devnameTxtCoAcSc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="device name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/statusTxtCoAcSc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="status"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/previous_stateTxtCoAcSc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="prev state"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/disconnectBtnCoAcSc"
+        android:layout_width="173dp"
+        android:layout_height="96dp"
+        android:adjustViewBounds="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/devnameTxtCoAcSc"
+        app:srcCompat="@drawable/disconnectbtn" />
+    <!--Button
+        android:id="@+id/disconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="disconnect"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/devname" /-->
+
+
+    <ImageButton
+        android:id="@+id/suggestBtnCoAcSc"
+        android:layout_width="149dp"
+        android:layout_height="179dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/clientsuggest"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/discoverBtnCoAcSc"
+        app:layout_constraintTop_toBottomOf="@+id/disconnectBtnCoAcSc"
+        app:layout_constraintVertical_bias="0.155" />
+
+    <ImageButton
+        android:id="@+id/suggestListBtnCoAcSc"
+        android:layout_width="148dp"
+        android:layout_height="179dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/hostsuggest"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.593"
+        app:layout_constraintStart_toEndOf="@+id/discoverBtnCoAcSc"
+        app:layout_constraintTop_toBottomOf="@+id/disconnectBtnCoAcSc"
+        app:layout_constraintVertical_bias="0.155" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

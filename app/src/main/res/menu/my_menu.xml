@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item android:title="Home" android:id="@+id/menuItemHome" app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_stat_name"/>
+
+    <item android:title="How it works?" android:id="@+id/menuItemChoose">
+        <menu>
+
+            <item android:title="Host" android:id="@+id/HostMenu"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"/>
+
+            <item android:title="Join" android:id="@+id/JoinMenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"/>
+
+            <item android:title="Disconnect" android:id="@+id/DisconnectMenu"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"/>
+
+            <item android:title="Advertise" android:id="@+id/AdvertiseMenu"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"/>
+
+            <item android:title="Discover" android:id="@+id/DiscoverMenu"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"/>
+
+            <item android:title="Suggest List" android:id="@+id/SuggestListMenu"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"/>
+
+            <item android:title="Suggest" android:id="@+id/SuggestMenu"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"/>
+
+            <item android:title="Init" android:id="@+id/InitMenu"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"/>
+
+            <item android:title="Start Streaming" android:id="@+id/StartStreamingMenu"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"/>
+
+            <item android:title="Stop Streaming" android:id="@+id/StopStreamingMenu"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"/>
+
+        </menu>
+    </item>
+</menu>
